@@ -17,3 +17,19 @@
         }
     </style>
 </head>
+<body>
+    <h2>MCA Student Details</h2>
+    <table>
+        <tr>
+            <th>Register Number</th>
+            <th>Name</th>
+            <th>CGPA</th>
+        </tr>
+        <% students.forEach(function(student) { %>
+            <tr>
+                <td><%= student.regno %></td>
+                <td><%= student.name %></td>
+                <td><%= student.CGPA %></td>
+            </tr>
+        <% }); %>
+    </table>     </body>     </html>
